@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div>
-        <div class="mx-auto w-full max-w-xs sm:max-w-md lg:max-w-lg p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg">
+    <div class="bg-blue-400 min-h-screen p-4">
+        <div class="mx-auto w-full max-w-xs sm:max-w-md lg:max-w-lg p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg bg-white">
             <h1 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Secure, Easy to Remember Password Generator</h1>
             <div class="mb-3 sm:mb-4">
                 <label class="block text-gray-700 text-sm sm:text-base mb-1 sm:mb-2" for="num-words">Number of Words:</label>
@@ -48,19 +48,19 @@
             </button>
             <div class="mt-4 sm:mt-6">
                 <h2 class="text-base sm:text-lg font-semibold">Generated Password:</h2>
-                <p id="password-output" class="mt-2 text-gray-800 text-sm sm:text-base break-all"></p>
-                <button id="copy-button" class="w-full bg-gray-300 text-gray-800 py-2 sm:py-3 rounded-md hover:bg-gray-400 mt-2 text-sm sm:text-base">
+                <p id="password-output" class="mt-2 text-gray-800 text-base sm:text-lg border border-gray-300 rounded-md p-2 bg-gray-50 break-all"></p>
+                <button id="copy-button" class="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-md hover:bg-blue-600 mt-2 text-sm sm:text-base">
                     Copy
                 </button>
             </div>
         </div>
         <div class="mt-6 mx-auto w-full max-w-xs sm:max-w-md lg:max-w-lg">
-            <div class="sm:hidden">
+            <div class="sm:hidden bg-white p-2 rounded-md">
                 <a href="https://xkcd.com/936/">
-                    <h2 class="text-base font-semibold text-center text-blue-600 hover:underline">Inspired by the Password Strength comic by XKCD</h2>
+                    <h2 class="text-base font-bold text-center text-blue-600 hover:underline">Based on the Password Strength comic by XKCD</h2>
                 </a>
             </div>
-            <h2 class="hidden sm:block text-base font-semibold text-center mb-2">Inspired by the Password Strength comic by XKCD</h2>
+            <h2 class="hidden sm:block text-base font-semibold text-center mb-2 text-white">Based on the Password Strength comic by XKCD</h2>
             <a href="https://xkcd.com/936/" class="hidden sm:block">
                 <img src="https://imgs.xkcd.com/comics/password_strength.png" alt="Password Strength" class="mx-auto max-w-full">
             </a>
@@ -162,18 +162,19 @@
             'loop', 'loose', 'lose', 'loss', 'lost', 'lot', 'loud', 'love', 'lovely', 'low', 'lower', 'loyal', 'lucky',
             'luggage', 'lump', 'lunch', 'lying', 'mad', 'made', 'main', 'mainly', 'mainstream', 'maintain', 'major',
             'make', 'mall', 'manage', 'management', 'manager', 'manner', 'many', 'mark', 'market', 'married', 'master',
-            'match', 'mate', 'matter', 'May', 'maybe', 'meal', 'mean', 'meaning', 'means', 'meanwhile', 'measure', 'meat',
-            'media', 'meet', 'meeting', 'melt', 'merely', 'merge', 'mess', 'messy', 'middle', 'might', 'mild', 'mind',
-            'mine', 'miss', 'mistake', 'mock', 'money', 'month', 'mood', 'moody', 'more', 'moreover', 'morning',
-            'mortgage', 'most', 'mostly', 'mother', 'mouth', 'move', 'much', 'mud', 'murder', 'music', 'must', 'nail',
-            'naive', 'name', 'nap', 'narrow', 'nasty', 'nature', 'naughty', 'near', 'nearby', 'nearly', 'neat',
-            'necessary', 'neck', 'need', 'neglect', 'neighborhood', 'neither', 'nephew', 'net', 'network', 'never',
-            'nevertheless', 'new', 'news', 'next', 'nice', 'niece', 'night', 'nod', 'noise', 'noisy', 'none',
-            'nonetheless', 'note', 'nothing', 'notice', 'now', 'nowadays', 'null', 'numb', 'nurse', 'nurture', 'nut',
-            'obviously', 'occur', 'odd', 'odds', 'offer', 'offset', 'often', 'old', 'once', 'one', 'ongoing', 'only',
-            'open', 'opportunity', 'opposite', 'order', 'other', 'otherwise', 'ought', 'out', 'outbreak', 'outcome',
-            'outfit', 'outgoing', 'outline', 'outlook', 'output', 'outside', 'outskirts', 'outstanding', 'oven', 'over',
-            'overall', 'overcome', 'overlap', 'overlook', 'overview', 'overwhelmed', 'overwhelming', 'owe', 'own',
+            'match', 'mate', 'matter', 'May', 'maybe', 'meal', 'mean', 'meaning', 'means', 'manner', 'many', 'mark',
+            'market', 'married', 'master', 'match', 'mate', 'matter', 'May', 'maybe', 'meal', 'mean', 'meaning', 'means',
+            'meanwhile', 'measure', 'meat', 'media', 'meet', 'meeting', 'melt', 'merely', 'merge', 'mess', 'messy',
+            'middle', 'might', 'mild', 'mind', 'mine', 'miss', 'mistake', 'mock', 'money', 'month', 'mood', 'moody',
+            'more', 'moreover', 'morning', 'mortgage', 'most', 'mostly', 'mother', 'mouth', 'move', 'much', 'mud',
+            'murder', 'music', 'must', 'nail', 'naive', 'name', 'nap', 'narrow', 'nasty', 'nature', 'naughty', 'near',
+            'nearby', 'nearly', 'neat', 'necessary', 'neck', 'need', 'neglect', 'neighborhood', 'neither', 'nephew', 'net',
+            'network', 'never', 'nevertheless', 'new', 'news', 'next', 'nice', 'niece', 'night', 'nod', 'noise', 'noisy',
+            'none', 'nonetheless', 'note', 'nothing', 'notice', 'now', 'nowadays', 'null', 'numb', 'nurse', 'nurture',
+            'nut', 'obviously', 'occur', 'odd', 'odds', 'offer', 'offset', 'often', 'old', 'once', 'one', 'ongoing',
+            'only', 'open', 'opportunity', 'opposite', 'order', 'other', 'otherwise', 'ought', 'out', 'outbreak',
+            'outcome', 'outfit', 'outgoing', 'outline', 'outlook', 'output', 'outside', 'outskirts', 'outstanding', 'oven',
+            'over', 'overall', 'overcome', 'overlap', 'overlook', 'overview', 'overwhelmed', 'overwhelming', 'owe', 'own',
             'owner', 'pace', 'pack', 'pain', 'paint', 'painting', 'pale', 'Pan', 'paper', 'park', 'part', 'partner',
             'party', 'pass', 'past', 'path', 'patient', 'pattern', 'pay', 'peak', 'peer', 'pen', 'perform', 'performance',
             'perhaps', 'period', 'perk', 'pick', 'picture', 'pie', 'piece', 'pin', 'pit', 'pitch', 'pity', 'place',
